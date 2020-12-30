@@ -36,7 +36,7 @@
     </ul>
   </div>
 </nav>
-<div class="NOT-MB" id="pc">
+<div class="NOT-MB" id="pc" style="display:none;">
     <div class="container-fluid text-center mw-100 mt-5" style="background-color:rgb(51,64,77);">
     <img src="attachments/727035093364899852/793698897011671060/awd.png" alt="Dbdjs" class="w-50 mt-5">
       <br>
@@ -85,7 +85,7 @@
         </div>
       </div>
 </div>
-<div class="MB" id="m">
+<div class="MB" id="m" style="display:none;">
  <div class="text-center pt-5 pd-5 md-5">
     <img src="https://cdn.discordapp.com/banners/773352845738115102/91fb0c5da8def5a1711a194cd48a1758.png?size=4096" alt="Dbdjs" class="mw-100 rounded">
       </div>
@@ -141,11 +141,9 @@ var pc = document.getElementById("pc")
 var body = document.getElementById("body")
 function displayMobile() {
 m.style.display = "block";
-pc.style.display = "none";
 body.style.background-color = "black";
 }
 function displayPC() {
-m.style.display = "none";
 pc.style.display = "block";
 body.style.background-color = "white";
 }
