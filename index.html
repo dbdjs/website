@@ -146,7 +146,7 @@ function displayPC() {
 pc.style.display = "block";
 document.body.style.backgroundColor = "white";
 }
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+if (( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 )) {
     displayPC()
 } else {
 displayPC()
