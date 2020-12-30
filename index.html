@@ -36,6 +36,7 @@
     </ul>
   </div>
 </nav>
+<div class="NOT-MB" id="pc">
     <div class="container-fluid text-center mw-100 mt-5" style="background-color:rgb(51,64,77);">
     <img src="attachments/727035093364899852/793698897011671060/awd.png" alt="Dbdjs" class="w-50 mt-5">
       <br>
@@ -83,6 +84,24 @@
       CSS by <a class="text-decoration-none" href="https://getbootstrap.com" style="-webkit-text-fill-color: #BF00FF;">Bootstrap</a>
         </div>
       </div>
+</div>
+<script> 
+var m = document.getElementById("m")
+var pc = document.getElementById("pc")
+function displayMobile() {
+m.style.display = "block";
+pc.style.display = "none";
+}
+function displayPC() {
+m.style.display = "none";
+pc.style.display = "block";
+}
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+    displayMobile()
+} else {
+displayPC()
+}
+</script>
       <script src="jquery-3.5.1.slim.min.js" ></script>
 <script src="npm/popper-js_1-16-1/dist/umd/popper.min.js" ></script>
 <script src="npm/bootstrap_4-5-3/dist/js/bootstrap.min.js" ></script>
