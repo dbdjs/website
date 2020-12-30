@@ -138,7 +138,6 @@
 <script> 
 var m = document.getElementById("m")
 var pc = document.getElementById("pc")
-var body = document.getElementById("body")
 function displayMobile() {
 m.style.display = "block";
 document.body.style.backgroundColor = "black";
@@ -148,9 +147,9 @@ pc.style.display = "block";
 document.body.style.backgroundColor = "white";
 }
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-    displayMobile()
+    displayPC()
 } else {
-displayPC()
+displayMobile()
 }
 </script>
       <script src="jquery-3.5.1.slim.min.js" ></script>
