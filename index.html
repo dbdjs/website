@@ -105,46 +105,23 @@ background-position: center;
 }
 }
 </style>
-  <div class="container-fluid mx-auto text-center mw-100 mt-5">
-    <img src="attachments/727035093364899852/793698897011671060/awd.png" alt="Dbdjs" class="mw-100 mt-5">
-      <br>
-      <br>
+  <div class="text-center pt-5 pd-5 md-5">
+    <img src="https://cdn.discordapp.com/banners/773352845738115102/91fb0c5da8def5a1711a194cd48a1758.png?size=4096" alt="Dbdjs" class="mw-100 rounded">
       </div>
-  <div class="text-center text-white font-bold h1 w-50 float-left" >
-        About
-      </div>
-  <br>
-  <br>
-<div class=" float-left text-white text-left">
-         DBD.JS is a Simplified and a Wrapper of Discord JS, it is created for users who do not understand JavaScript and how it works.
-<br><br>
-Simply dbd.js is for beginners and more easy to Understand, no need complicated codes.
-<br><br>
-The Developers were inspired by Bot Designer For Discord, an amazing Application Coder with its own Script Language known as BDScript. You can download it in Play Store or App Store.
-         </div>
-       <div class="mt-5 float-left text-white text-left h3">
-         Are you familiar with BDFD Aka Bot Designer for Discord?</div><br><div class="float-left text-white border-bottom border-bottom-black text-left h4"> Now you can use your codes with a Custom Hosting with no Problem
-         </div>
-  <br>
-   <br>
-  <div class="mt-3 float-left text-white text-left h3">Installing DBD.JS
-       </div>
-  <br>
-  <div class="float-left text-white text-left">Install DBD.JS in your Command Prompt or Terminal with Node Package Module (NPM)</div>
-       <br>
-  <br>
-  <div class="float-left w-50 text-center">
-       <pre class="hljs float-left w-50 text-center rounded border border-muted h5" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);">npm install dbd.js
-</pre>
+    <div class="mx-auto text-center text-white mt-5 h5">
+<div class= "text-center mt-3 mx-auto w-50 card">
+  <a href="https://npmjs.com/package/dbd.js" target="blank" class="font-weight-normal text-center text-dark font-normal h6 card-body">
+    npm install dbd.js
+    </a>
   </div>
-   <br>
-   <br>
-       <div class="mt-5 float-left text-white text-left h3">Example Usage ⛏️
-       </div>
-       <br>
-       <div class="float-left text-white text-left">The startup code for your bot</div>
-       <div class="mt-2 float-left text-left w-100">
-         <pre class="hljs rounded border border-muted" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);"><span class="text-info">const</span> <span class="text-primary">dbd</span> = <span class="font-weight-bold text-warning">require</span>(<span class="hljs-string" style="color: rgb(136, 0, 0);">"dbd.js"</span>) <span class="hljs-comment" style="color: rgb(136, 136, 136);">//Import dbd.js</span>
+</div>
+    <div class="mx-auto text-center text-white mt-5 h2 font-bold">About</div>
+  <div class="mx-auto text-left w-75 mt-5">
+  <a class="text-left text-decoration-none text-white mx-auto" href="#" style="text-align:center;width:200px;">DBD.JS is a Simplified and a Wrapper of Discord JS, it is created for users who do not understand JavaScript and how it works. <br><br>Simply dbd.js is for beginners and more easy to Understand, no need complicated codes.<br><br>The Developers were inspired by Bot Designer For Discord, an amazing Application Coder with its own Script Language known as BDScript. You can download it in Play Store or App Store.
+    </div>
+    <div class="mx-auto text-center text-white mt-4 h2 font-bold">Example</div>
+    <div class="mt-5 float-left text-left container-fluid w-100">
+   <pre class="hljs rounded border border-muted" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);"><span class="text-info">const</span> <span class="text-primary">dbd</span> = <span class="font-weight-bold text-warning">require</span>(<span class="hljs-string" style="color: rgb(136, 0, 0);">"dbd.js"</span>) <span class="hljs-comment" style="color: rgb(136, 136, 136);">//Import dbd.js</span>
 <span class="text-info">const</span> <span class="text-primary">bot</span> = <span class="hljs-keyword" style="font-weight: 700;">new</span> <span class="text-primary">dbd</span>.<span class="text-warning font-weight-bold">Bot</span>({
 <span class="text-info">token:</span><span class="hljs-string" style="color: rgb(136, 0, 0);">"Discord Bot Token"</span>,
 <span class="text-info">prefix:</span><span class="hljs-string" style="color: rgb(136, 0, 0);">"!"</span>
@@ -158,73 +135,13 @@ The Developers were inspired by Bot Designer For Discord, an amazing Application
 })
 
 </pre>
-         </div>
        
-       <div class="mt-3 float-left text-white text-left h3"> Music Support 🎶
-         </div>
-       <div class="mt-1 float-left text-white text-left">
-         With our powerful Package, we incorporated Music with a simple function
-         </div>
-       <div class="mt-2 float-left text-left mw-100">
-<pre class="hljs rounded border border-muted" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);"><span class="text-primary">$playSong[video name;error]</span> - Search Youtube and play the requested Song name
-<span class="text-primary">$playSpotify[spotify playlist url;show success (number/name);error]</span> - Search Youtube and Plays Music from Spotify Playlist
-<span class="text-primary">$skipSong</span> - Skips Song and play the next one (if any)
-<span class="text-primary">$skipTo[number]</span> - Skips <%= "<" %>number<%= ">" %> Songs and plays the next one
-<span class="text-primary">$stopSong</span> - Stopped and Remove All songs in Queue
-<span class="text-primary">$pauseSong</span> - Paused Song that's currently Playing
-<span class="text-primary">$resumeSong</span> - Resumed Song that's currently Paused
-<span class="text-primary">$volume[number]</span> - Modify the Volume of Sound
-<span class="text-primary">$loopQueue</span> - Loops the Queue and keep tracks without removing them after playing
-</pre>
-         </div>
-       
-       <div class="mt-3 h3 float-left text-white text-left"> Using Variables ⚙️
-         </div>
-       <br>
-       <div class="float-left text-white text-left">Adding a variable to database so it can be saved and used for further use</div>
-       
-       <div class="mt-2 float-left text-left w-100">
-         <pre class="hljs rounded border border-muted" style="display: block; overflow-x: auto; padding:0.5em; background: rgb(240,240,240); color: rgb(68, 68, 68);"><span class="text-primary">bot</span>.<span class="text-warning font-weight-bold">variables</span>({
-<span class="text-info">Name</span><span class="text-danger">:</span><span class="hljs-string" style="color: rgb(136, 0, 0);">"Value"</span>, <span class="text-muted">// A name and value for each variable</span>
-<span class="text-info">Name2</span><span class="text-danger">:</span><span class="hljs-string" style="color: rgb(136, 0, 0);">"Value2"</span> <span class="text-muted">// Money:100, Myname:"Kinyo", Developers:["Leref", "Akeno"]</span>
- })
-         </pre>
-         </div>
-       
-       <div class="mt-3 float-left text-white text-left h4">Using Callbacks/Events 💡</div>
-       <br>
-       <div class="float-left text-white text-left">Executing Callback every Events emitted</div>
-       <div class="mt-2 float-left text-left w-100">
-         <pre class="rounded border border-muted" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240,240,240); color: rgb(68,68,68);"><span class="text-primary">bot</span>.<span class="text-warning font-weight-bold">joinCommand</span>({
-<span class="text-info">channel</span><span class="text-danger">:</span><span class="hljs-string" style="color: rgb(136, 0, 0);">"CHANNEL ID"</span>, <span class="text-muted">// A channel ID for the code to execute</span>
-<span class="text-info">code</span><span class="text-danger">:</span><span class="hljs-string" style="color: rgb(136, 0, 0);">`Welcome $username`</span> <span class="text-muted">//The code everytime someone Joined a Guild (if bot in guild)
-})
-
-<span class="text-primary">bot</span>.<span class="text-warning font-weight bold">onJoined</span>() <span class="text-muted">//An Event for Callback (bot.joinCommand) to work</span>
-</pre>
-         </div>
-         <div class="mt-3 float-left text-white text-left h3">Setting Bot Status 📌</div>
-         <br>
-         <div class="float-left text-white text-left">Set your bot Status that appear below Bots Profile Username</div>
-         <div class="mt-1 float-left text-left w-100">
-           <pre class="rounded border border-muted" style="display: block; overflow-x: auto; padding: 0.5rm; background: rgb(240, 240, 240);color: rgb(68, 68, 68);"><span class="text-primary">bot</span>.<span class="text-warning font-weight-bold">status</span>({
- <span class="text-info">text</span><span class="text-danger">:</span><span class="hljs-string" style="color: rgb(136, 0, 0);">"npm install dbd.js"</span>,
- <span class="text-info">type</span><span class="text-danger">:</span><span class="hljs-string" style="color: rgb(136, 0, 0);">"playing"</span>,
- <span class="text-info">time</span><span class="text-danger">:</span><span class="text-warning">12</span>
- })
- </pre>
- </div>
- <br> 
-         <br> 
-         <div class="mx-auto mt-5 pt-5 text-center inline">
+   </div>
+    <div class="mx-auto mt-5 pt-5 text-center inline">
        <a class="btn btn-primary rounded text-white text-decoration-none btn-lg" href="https://dbd.leref.ga" role="button">Get Started</a>
       <a class="btn ml-3 btn-lg text-white text-decoration-none" style="background-color:rgb(114,137,218);"href="https://discord.gg/HmyERe3D2a" role="button"><i src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/91_Discord_logo_logos-512.png"></i>Discord</a>
     </div>
-         <br>
-         <br>
-         <br>
-       </div>
-       
+
 </div>
          
 <script> 
