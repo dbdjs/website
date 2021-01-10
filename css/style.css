@@ -1,3 +1,11 @@
 .mt-6 {
   margin-top: ($spacer * 6) !important;
   }
+
+.hljs-comment {
+  color: var(--comment-color);
+}
+
+:root {
+  --comment-color: rgb(136, 136, 136);
+}
