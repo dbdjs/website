@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'undertale';
+    src: url('/fonts/DeterminationSansWeb.woff2') format('woff2'),
+        url('/fonts/DeterminationSansWeb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Wingdings';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Wingdings'), url('/fonts/wingding.woff') format('woff');
+    }
+
+body {
+    background-color: rgb(0,0,1);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.white {
+    color:#FFF;
+}
+.black {
+    color:#000; 
+}
+
+.loading-text {
+    position: absolute;
+    margin: auto;
+}
+
+.blue {
+    color:rgb(0, 102, 255);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.button-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size:1.5rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin: auto;
+}
+
+.heading {
+    font-size: 3rem;
+    margin:auto;
+    align-self: center;
+    margin-bottom: 0;
+}
+
+.box {
+    font-family: 'undertale';
+    font-size:1.5rem;
+    width: 300px;
+    max-width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    animation: animateSlideDown 300ms forwards;
+    cursor: pointer;
+}
+
+
+.box:hover {
+    color:yellow;
+}
+
+#logo {
+    width:100% auto;
+    max-width: 25vmin;
+    border-radius: 10px;
+    margin:auto;
+    transform: translateY(100%);
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+
+#logo.fade {
+    animation: animateFade 3s;
+}
+
+#logo.slide {
+    animation: animateSlide 300ms forwards;
+}
+
+.changingFont {
+    animation: changeFont 100ms linear;
+}
+
+.function {
+    color: #dada6c;
+}
+
+.declare {
+    color:#2566cb;
+}
+
+.used {
+    color:#2490f1;
+}
+
+.notused {
+    color:#9cdcf0;
+}
+
+.normal {
+    color:rgb(203,204,198);
+}
+
+.string {
+    color:#ce915b;
+}
+
+.class {
+    color:#3ac9b0;
+}
+
+.black {
+    color:black;
+}
+
+#code {
+    background: rgb(31,36,48);
+    color: #f1f1f1;
+    padding: 10px 16px;
+    border-radius: 2px;
+    border-top: 4px solid #00aeef;
+    -moz-box-shadow: inset 0 0 10px #000;
+    box-shadow: inset 0 0 10px #000;
+    counter-reset: line;
+    width:90%;
+    max-width: 100vmin;
+}
+
+#code .newLine {
+    line-height: 1.5rem;
+}
+
+span {
+    display: inline-block;
+}
+
+#code .newLine:before {
+      counter-increment: line;
+      content: counter(line);
+      display: inline-block;
+      border-right: 1px solid #ddd;
+      padding: 0 .5em;
+      margin-right: .5em;
+      color: #888
+
+}
+
+.button {
+    background-color: #FFF;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 32px;
+    transition: 300ms;
+}
+
+.button:hover {
+    border: 2px solid #FFFFFF44;
+    transform: translateY(-10px);
+}
+
+
+@-moz-keyframes changeFont {
+    to {
+        font-family: 'Wingdings';
+    }
+}
+
+@-o-keyframes changeFont {
+    to {
+        font-family: 'Wingdings';
+    }
+}
+
+@-webkit-keyframes changeFont {
+    to {
+        font-family: 'Wingdings';
+    }
+}
+@keyframes changeFont {
+    to {
+        font-family: 'Wingdings';
+    }
+}
+
+@-moz-keyframes animateSlide {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@-o-keyframes animateSlide {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes animateSlide {
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes animateSlide {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@-moz-keyframes animateFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes animateFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes animateFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes animateFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes animateSlideDown {
+    from {
+        opacity: 0;
+       transform:  translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-o-keyframes animateSlideDown {
+    from {
+        opacity: 0;
+       transform:  translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes animateSlideDown {
+    from {
+        opacity: 0;
+       transform:  translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes animateSlideDown {
+    from {
+        opacity: 0;
+       transform:  translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
