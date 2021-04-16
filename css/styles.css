@@ -67,7 +67,7 @@ body {
 }
 
 .box {
-    font-family: 'undertale';
+    font-family: Roboto, 'sans-serif', Arial;
     font-size:1.5rem;
     width: 300px;
     max-width: 300px;
