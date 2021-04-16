@@ -2,7 +2,6 @@ const fades = document.querySelector("#logo");
 const interval = setInterval(changeLoadingText, 1000);
 const loadingText = document.getElementById("loadingText");
 const body = document.querySelector("body");
-const audio = document.querySelector("#audio")
 let dots = 0;
 document.onreadystatechange = function () {
     if (document.readyState !== "complete") {
@@ -79,12 +78,7 @@ function addRest() {
     aboutDescription.innerText = "DBD.JS is a Package that was made for NodeJS Beginners, they are easy to maintain and use to build Discord Bots with ease";
     about.append(aboutDescription)
     about.onclick = function () {
-        audio.play()
         window.location.href = "https://npmjs.com/package/dbd.js"
-    }
-
-    about.onanimationend = () => {
-        changeFonts(about)
     }
 
     flex.append(about)
@@ -101,12 +95,7 @@ function addRest() {
     inspirationDescription.innerText = "DBD.JS was inspired by a Software called Bot Designer for Discord, a good Software to build your bot easily.";
     inspiration.append(inspirationDescription)
     inspiration.onclick = function () {
-        audio.play()
         window.location.href = "https://botdesignerdiscord.com"
-    }
-
-    inspiration.onanimationend = () => {
-        changeFonts(inspiration)
     }
 
     flex.append(inspiration)
@@ -123,23 +112,6 @@ function addRest() {
     const exampleText = document.createElement("p")
     exampleText.classList.add("heading")
     exampleText.innerText = "Example"
-
-    exampleCategory.onanimationend = () => {
-       changeFonts(exampleCategory)
-    }
-
-    function changeFonts(element) {
-        if (element.classList.contains("changingFont")) {
-            element.classList.remove("changingFont")
-            setTimeout(function () {
-                element.classList.add("changingFont")
-            }, Math.floor(Math.random() * 50) * 1000)
-        } else {
-            setTimeout(function () {
-                element.classList.add("changingFont")
-            }, Math.floor(Math.random() * 50) * 1000)
-        }
-    }
 
     exampleCategory.append(exampleText)
     exampleFlex.append(exampleCategory)
