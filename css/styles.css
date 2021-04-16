@@ -82,11 +82,11 @@ body {
 
 
 #logo.fade {
-    animation: animateFade 3s;
+    animation: animateFade 1s;
 }
 
 #logo.slide {
-    animation: animateSlide 300ms forwards;
+    animation: animateSlide 500ms forwards;
 }
 
 .function {
