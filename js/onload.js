@@ -235,7 +235,7 @@ function addRest() {
    NPMButton.classList.add("button")
    NPMButton.innerText = " Install Package"
    NPMButton.classList.add("black")
-   const Documentation = createButton("https://dbd.leref.ga", ButtonFlex)
+   const Documentation = createButton("https://aoi.leref.ga", ButtonFlex)
    Documentation.classList.add("button")
    Documentation.classList.add("black")
    Documentation.innerText = " Get Started"
