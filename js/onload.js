@@ -227,11 +227,11 @@ function addRest() {
    //Code done
    const ButtonFlex = document.createElement("div")
    ButtonFlex.classList.add("button-flex")
-   const DiscordButton = createButton("https://dbd.js.org/invite", ButtonFlex)
+   const DiscordButton = createButton("https://aoi.js.org/invite", ButtonFlex)
    DiscordButton.classList.add("button")
    DiscordButton.innerText = " Support Server"
    DiscordButton.classList.add("black")
-   const NPMButton = createButton("https://npmjs.com/package/dbd.js", ButtonFlex)
+   const NPMButton = createButton("https://npmjs.com/package/aoi.js", ButtonFlex)
    NPMButton.classList.add("button")
    NPMButton.innerText = " Install Package"
    NPMButton.classList.add("black")
