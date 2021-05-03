@@ -75,7 +75,7 @@ function addRest() {
     aboutHead.innerText = "About"
     about.append(aboutHead)
     const aboutDescription = document.createElement("p")
-    aboutDescription.innerText = "Aoi.JS is a Package that was made for NodeJS Beginners, they are easy to maintain and use to build Discord Bots with ease";
+    aboutDescription.innerText = "DBD.JS is a Package that was made for NodeJS Beginners, they are easy to maintain and use to build Discord Bots with ease";
     about.append(aboutDescription)
     about.onclick = function () {
         window.location.href = "https://npmjs.com/package/dbd.js"
@@ -92,7 +92,7 @@ function addRest() {
     inspirationHead2.innerText = "Inspiration"
     inspiration.append(inspirationHead2)
     const inspirationDescription = document.createElement("p")
-    inspirationDescription.innerText = "Aoi.JS was inspired by a Software called Bot Designer for Discord, a good Software to build your bot easily.";
+    inspirationDescription.innerText = "DBD.JS was inspired by a Software called Bot Designer for Discord, a good Software to build your bot easily.";
     inspiration.append(inspirationDescription)
     inspiration.onclick = function () {
         window.location.href = "https://botdesignerdiscord.com"
@@ -132,13 +132,13 @@ function addRest() {
     example.append(create("newLine", ""))
     example.append(create("declare", "const"))
     example.append(create("space", " "))
-    example.append(create("used", "Aoi"))
+    example.append(create("used", "DBD"))
     example.append(create("space", " "))
     example.append(create("normal", "="))
     example.append(create("space", " "))
     example.append(create("function", "require"))
     example.append(create("normal", "("))
-    example.append(create("string", "\"aoi.js\""))
+    example.append(create("string", "\"DBD.js\""))
     example.append(create("normal", ");"))
     
     //Initialize Bot
@@ -152,7 +152,7 @@ function addRest() {
     example.append(create("space", " "))
     example.append(create("declare", "new"))
     example.append(create("space", " "))
-    example.append(create("used", "Aoi"))
+    example.append(create("used", "DBD"))
     example.append(create("normal", "."))
     example.append(create("class", "Bot"))
     example.append(create("normal", "({"))
@@ -227,11 +227,11 @@ function addRest() {
    //Code done
    const ButtonFlex = document.createElement("div")
    ButtonFlex.classList.add("button-flex")
-   const DiscordButton = createButton("https://aoi.js.org/invite", ButtonFlex)
+   const DiscordButton = createButton("https://dbd.js.org/invite", ButtonFlex)
    DiscordButton.classList.add("button")
    DiscordButton.innerText = " Support Server"
    DiscordButton.classList.add("black")
-   const NPMButton = createButton("https://npmjs.com/package/aoi.js", ButtonFlex)
+   const NPMButton = createButton("https://npmjs.com/package/dbd.js", ButtonFlex)
    NPMButton.classList.add("button")
    NPMButton.innerText = " Install Package"
    NPMButton.classList.add("black")
