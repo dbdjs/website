@@ -138,7 +138,7 @@ function addRest() {
     example.append(create("space", " "))
     example.append(create("function", "require"))
     example.append(create("normal", "("))
-    example.append(create("string", "\"DBD.js\""))
+    example.append(create("string", "\"dbd.js\""))
     example.append(create("normal", ");"))
     
     //Initialize Bot
