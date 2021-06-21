@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 if($.cookie("ody-theme") == 1){
-	$(".hero-jumbo").css({background:'linear-gradient(242deg, #5498ff, #246cff) 0% 0% / 200% '});
+	$(".hero-jumbo").css({background:'linear-gradient(242deg, #d1e3ff, #246cff) 0% 0% / 200% '});
 	$(".hero-jumbo").css({animation:'9s ease 0s infinite normal none running AnimationName'});
 }
 
@@ -20,7 +20,7 @@ if($.cookie("ody-theme") == 3){
 }
 
 if(!$.cookie("ody-theme")){
-	$(".hero-jumbo").css({background:'linear-gradient(242deg, #5498ff, #246cff) 0% 0% / 200% '});
+	$(".hero-jumbo").css({background:'linear-gradient(242deg, #d1e3ff, #246cff) 0% 0% / 200% '});
 	$(".hero-jumbo").css({animation:'9s ease 0s infinite normal none running AnimationName'});
 }
 
@@ -29,7 +29,7 @@ if(!$.cookie("ody-theme")){
 $("#classic").on('click',function(){
 
 	$.cookie("ody-theme", 1);
-	$(".hero-jumbo").css({background:'linear-gradient(242deg, #5498ff, #246cff) 0% 0% / 200% '});
+	$(".hero-jumbo").css({background:'linear-gradient(242deg, #d1e3ff, #246cff) 0% 0% / 200% '});
 	$(".hero-jumbo").css({animation:'9s ease 0s infinite normal none running AnimationName'});
 
 
